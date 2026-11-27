@@ -1,7 +1,7 @@
 # SmartCampus – Smart Campus Event & Club Management System
 
 <p align="center">
-  <img src="screenshots/home.png" alt="SmartCampus Homepage" width="100%">
+  <img src="screenshots/homepage.png" alt="SmartCampus Homepage" width="100%">
 </p>
 
 <h3 align="center">Making Campus Life More Connected.</h3>
@@ -38,7 +38,7 @@ The project currently includes a frontend implementation. Backend development an
 ## 🖥️ Screenshots
 
 ### 1. Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/homepage.png)
 
 ### 2. Events Section
 ![Events](screenshots/events.png)
