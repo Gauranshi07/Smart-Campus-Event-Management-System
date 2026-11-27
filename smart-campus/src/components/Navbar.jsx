@@ -7,7 +7,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        Smart<span>Campus.</span>
+        <div>
+          Smart<span>Campus.</span>
+        </div>
+        <small>ABESEC Ghaziabad</small>
       </div>
 
       <div className="nav-links">
@@ -31,7 +34,7 @@ function Navbar() {
           </div>
         </div>
 
-        <a href="/#about">About</a>
+        <Link to="/about">About</Link>
       </div>
 
       <div className="nav-buttons">

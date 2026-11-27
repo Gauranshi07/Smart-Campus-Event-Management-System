@@ -23,13 +23,13 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">
+          <a href="#events" className="primary-btn">
             Explore Events <ArrowRight size={17} />
-          </button>
+          </a>
 
-          <button className="secondary-btn">
+          <a href="#clubs" className="secondary-btn">
             Explore Clubs
-          </button>
+          </a>
         </div>
 
         <div className="hero-note">
