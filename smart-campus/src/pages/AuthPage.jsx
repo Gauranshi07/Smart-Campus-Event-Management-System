@@ -26,8 +26,11 @@ function AuthPage() {
         
 
         <div className="auth-brand">
+        <div>
           Smart<span>Campus.</span>
         </div>
+        <small>ABESEC Ghaziabad</small>
+      </div>
 
         <div className="auth-content">
           <span className="auth-label">
