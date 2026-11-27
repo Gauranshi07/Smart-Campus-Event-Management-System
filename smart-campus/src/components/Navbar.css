@@ -136,6 +136,15 @@
   font-size: 13px;
 }
 
+.login-btn,
+.signup-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .signup-btn:hover {
   background: #a087c9;
 }

@@ -35,8 +35,21 @@ function Navbar() {
       </div>
 
       <div className="nav-buttons">
-        <button className="login-btn">Login</button>
-        <button className="signup-btn">Get Started</button>
+        <Link
+          to="/login"
+          state={{ mode: 'login' }}
+          className="login-btn"
+        >
+          Login
+        </Link>
+
+        <Link
+          to="/login"
+          state={{ mode: 'register' }}
+          className="signup-btn"
+        >
+          Get Started
+        </Link>
       </div>
     </nav>
   )
