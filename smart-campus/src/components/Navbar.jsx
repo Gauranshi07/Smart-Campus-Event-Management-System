@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom'
+import { ChevronDown } from 'lucide-react'
 import './Navbar.css'
 
 function Navbar() {
@@ -10,10 +11,27 @@ function Navbar() {
       </div>
 
       <div className="nav-links">
-        <a href="#">Home</a>
-        <a href="#events">Events</a>
-        <a href="#clubs">Clubs</a>
-        <a href="#about">About</a>
+        <Link to="/">Home</Link>
+        <Link to="/#events">Events</Link>
+
+        <div className="nav-dropdown">
+          <button className="nav-dropdown-btn">
+            Clubs
+            <ChevronDown size={14} strokeWidth={1.8} />
+          </button>
+
+          <div className="nav-dropdown-menu">
+            <Link to="/clubs/technical">
+              Technical Clubs
+            </Link>
+
+            <Link to="/clubs/non-technical">
+              Non-Technical Clubs
+            </Link>
+          </div>
+        </div>
+
+        <a href="/#about">About</a>
       </div>
 
       <div className="nav-buttons">
