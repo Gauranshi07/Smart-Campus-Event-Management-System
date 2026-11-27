@@ -8,11 +8,22 @@ const icons = {
   hackathon: Sparkles
 }
 
-function EventCard({ category, title, description, type }) {
-  const Icon = icons[type]
+function EventCard({ category, title, description, type, onClick }) {
+  const Icon = icons[type] || CalendarDays
 
   return (
-    <article className="event-item">
+    <article
+      className="event-item"
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          onClick()
+        }
+      }}
+    >
       <div className={`event-image event-image-${type}`}>
         <span>{category}</span>
         <Icon size={48} strokeWidth={1.3} />
@@ -26,7 +37,7 @@ function EventCard({ category, title, description, type }) {
         <p>{description}</p>
 
         <div className="event-bottom">
-          <span>Event details coming soon</span>
+          <span>View Event Details</span>
           <ArrowRight size={17} />
         </div>
       </div>
